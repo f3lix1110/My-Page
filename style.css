@@ -1,0 +1,52 @@
+img{
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+    font: 180%;
+    color:rgb(126, 32, 4);
+}
+
+div{ text-align:"center"}
+
+p{  font: oblique bold 120% cursive;} /*fuente*/
+
+body{
+    background-color: rgb(209, 173, 82);
+}
+
+li{ font-family: 'Courier New';  
+    font-size: 150%; 
+    font-weight: bold; /*grosor*/
+}
+
+ol {
+    max-width: 1200px;
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 50px;
+    }
+    ol li {
+    margin: 0 0 0.5rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    }
+    ol li::before {
+    content: counter(my-awesome-counter);
+    color: rgb(233, 10, 10);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 62px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    transform: rotate(-40deg);
+    background: rgb(238, 226, 226);
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 0 rgb(26, 24, 24);
+    }
